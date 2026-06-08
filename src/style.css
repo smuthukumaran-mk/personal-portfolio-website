@@ -50,7 +50,7 @@ header {
     text-decoration: none;
     color: var(--text-primary);
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 .title span {
     color: var(--accent-primary);
@@ -188,10 +188,7 @@ header {
     font-size: 4rem;
     font-weight: 800;
     text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5rem auto 1rem auto;
     position: relative;
 }
 
@@ -255,7 +252,7 @@ header {
     position: relative;
     width: 90%;
     margin: auto;
-    padding-left: 40px;
+    padding-left: 27px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -264,7 +261,7 @@ header {
 .education-details .edu-card::before {
     content: "";
     position: absolute;
-    left: -3px;
+    left: -16px;
     top: 0;
     width: 4px;
     height: 100%;
@@ -281,7 +278,8 @@ header {
     border: 1px solid var(--border);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
     width: 100%;
-    max-width: 750px;
+    max-width: 650px;
+    transition: all 0.3s ease;
 }
 
 .course-card>div::before {
@@ -294,6 +292,15 @@ header {
     border: 4px solid var(--accent-primary);
     left: -55px;
     top: 26px;
+    transition: all 0.3s ease;
+}
+.course-card > div:hover {
+    border: 1px solid var(--accent-hover);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    transform: translateX(4px);
+}
+.course-card>div:hover::before {
+    transform: translateX(-4px);
 }
 
 .course-card .btech h3 {
@@ -442,7 +449,6 @@ header {
 }
 
 .project-card .p-cards:hover {
-    transform: translateX(8px);
     border-color: var(--accent-primary);
     box-shadow: 0 12px 24px var(--glow_shadow);
 }
@@ -470,20 +476,157 @@ header {
 .project-desc h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--accent-primary);
 }
 
 .project-desc ul {
     padding: 8px 0 8px 24px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-secondary);
     line-height: 1.5;
 }
 
-.project-desc h4 {
+.project-desc .tech {
     font-size: 1.1rem;
     color: var(--accent-primary);
     margin-top: 12px;
+}
+
+.project-desc div {
+    display: flex;
+    gap: 16px;
+    margin: 10px 0 0 12px;
+}
+.tech-list p {
+    border: 1px solid var(--accent-hover);
+    padding: 4px 12px;
+    color: var(--text-secondary);
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: var(--bg-primary);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+.tech-list p:hover {
+    transform: scale(1.08);box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+
+/* ------------------------------ Work Experiance ------------------------------ */
+
+.exp-container {
+    width: 90%;
+    margin: auto;
+}
+
+.exp-container .exp-title {
+    color: var(--text-primary);
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.exp-container .exp-title::before {
+    content: "";
+    background-color: var(--accent-primary);
+    height: 6px;
+    width: 130px;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.exp-details .tex-exp {
+    font-size: 1.75rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    color: var(--text-primary);
+}
+
+.exp-details .exp-card {
+    position: relative;
+    width: 90%;
+    margin: 1.5rem auto 3rem auto;
+    padding-left: 73px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.exp-details .exp-card::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--border);
+    border-radius: 20px;
+}
+
+.exp-card > div {
+    position: relative;
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.exp-card > div::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--bg-surface);
+    border: 4px solid var(--accent-primary);
+    left: -55px;
+    top: 26px;
+    transition: all 0.3s ease;
+}
+.exp-card > div:hover {
+    border: 1px solid var(--accent-hover);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.exp-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--accent-primary);
+}
+
+.exp-card .polyelastic div {
+    display: flex;
+    justify-content: space-between;
+}
+.exp-card .sp div {
+    display: flex;
+    justify-content: space-between;
+}
+.exp-card .rcm div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-card p {
+    margin: 2px 0 10px 0;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+.exp-card ul {
+    padding: 8px 0 8px 24px;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
 }
 
 
