@@ -234,7 +234,7 @@ header {
     color: var(--text-primary);
     text-align: left;
     font-size: 1.1rem;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .about-container .education-details {
@@ -666,7 +666,7 @@ header {
 .contact-container .contact-links {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .contact-links a {
@@ -674,6 +674,10 @@ header {
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--text-secondary);
+}
+.email i {
+    position: relative;
+    bottom: -2px;
 }
 .contact-links .email:hover {
     color: var(--accent-hover);
@@ -688,7 +692,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin: 16px 0;
+    margin: 18px 0;
 }
 .social-links a {
     text-decoration: none;
