@@ -25,7 +25,17 @@
                 <a href="#exp-page">Experience</a>
                 <a href="#contact-page">Contact</a>
             </nav>
+            <a class="menu-bar" onclick="openSideBar()"><i class="fa-solid fa-bars"></i></a>
         </div>
+        <nav class="side-bar">
+                <a class="menu-close" onclick="closeSideBar()"><i class="fa-solid fa-xmark"></i></a>
+                <a class="sb" onclick="closeSideBar()" href="#home-page">Home</a>
+                <a class="sb" onclick="closeSideBar()" href="#about-page">About</a>
+                <a class="sb" onclick="closeSideBar()" href="#skill-page">Skills</a>
+                <a class="sb" onclick="closeSideBar()" href="#project-page">Project</a>
+                <a class="sb" onclick="closeSideBar()" href="#exp-page">Experience</a>
+                <a class="sb" onclick="closeSideBar()" href="#contact-page">Contact</a>
+            </nav>
     </header>
 
     <main class="main-content">
@@ -55,7 +65,6 @@
         <section id="about-page">
             <div class="about-container">
                 <h1 class="about-title">About</h1>
-                <h2 class="profile-summary">Profile Summary</h2>
                 <div class="img-and-summary">
 
                     <img src="images/about.png">
@@ -179,7 +188,7 @@
                     <div class="exp-card">
                         <div class="polyelastic">
                             <h3>Merchandiser</h3>
-                            <div>
+                            <div class="company">
                                 <h4>Polyelastic Private Limited</h4>
                                 <h4>Nov 2024 - Apr 2025</h4>
                             </div>
@@ -199,7 +208,7 @@
                         </div>
                         <div class="sp">
                             <h3>Assistant Merchandiser</h3>
-                            <div>
+                            <div class="company">
                                 <h4>S.P. Apparels LTD</h4>
                                 <h4>Oct 2023 - Oct 2024</h4>
                             </div>
@@ -221,7 +230,7 @@
                         </div>
                         <div class="rcm">
                             <h3>Junior Merchandiser</h3>
-                            <div>
+                            <div class="company">
                                 <h4>Royal Classic Mills (P) LTD</h4>
                                 <h4>Aug 2021 - Sep 2023</h4>
                             </div>
@@ -279,6 +288,18 @@
             <p>&copy; 2026 Muthukumarans S. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function openSideBar() {
+            const openSide = document.querySelector('.side-bar')
+            openSide.style.display = 'flex'
+        }
+        function closeSideBar() {
+            const openSide = document.querySelector('.side-bar')
+            openSide.style.display = 'none'
+        }
+    </script>
+    
 </body>
 
 </html>
