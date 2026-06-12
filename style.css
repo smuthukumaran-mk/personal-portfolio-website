@@ -37,7 +37,7 @@ body {
                                     Mobile Display
 -----------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 425px) {
 
     /* ------------------------------ Navigation bar ------------------------------ */
     header {
@@ -747,7 +747,6 @@ body {
         text-decoration: none;
         color: var(--text-primary);
         font-size: 1.2rem;
-        padding: 24px 4px 24px 4px;
         font-weight: 800;
     }
 
@@ -896,7 +895,7 @@ body {
         font-size: 4rem;
         font-weight: 800;
         text-align: center;
-        margin: 5rem auto 1rem auto;
+        margin: 5rem auto 3rem auto;
         position: relative;
     }
 
@@ -1431,6 +1430,8 @@ body {
         color: rgb(28, 101, 212);
         height: 24px;
         width: 24px;
+        position: relative;
+        bottom: -1px;
     }
 
     .github i {
