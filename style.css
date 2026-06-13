@@ -29,15 +29,11 @@ body {
     color: var(--text-primary)
 }
 
-/* 0–425px → Mobile only
-426–768px → Tablet only
-769px+ → Desktop only */
-
 /*-----------------------------------------------------------------------------------------
                                     Mobile Display
 -----------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 425px) {
 
     /* ------------------------------ Navigation bar ------------------------------ */
     header {
@@ -81,6 +77,7 @@ body {
         padding: 8px 16px;
         transition: all 0.3s ease;
     }
+
     .header-container .menu-bar:active {
         background-color: var(--accent-hover);
         transition: all 0.3s ease;
@@ -153,7 +150,7 @@ body {
 
     .name-title h3 {
         margin-top: 12px;
-        font-size: 1rem;
+        font-size: 12px;
         color: var(--text-secondary);
         font-weight: 400;
     }
@@ -170,7 +167,7 @@ body {
     }
 
     .name-title p {
-        font-size: 1rem;
+        font-size: 14px;
         color: var(--text-secondary);
         font-weight: 500;
     }
@@ -510,13 +507,12 @@ body {
     }
 
     .tech-list p {
-        border: 1px solid var(--accent-hover);
         padding: 4px 10px;
-        color: var(--text-secondary);
+        color: var(--text-on-accent);
         border-radius: 8px;
         font-size: 12px;
         font-weight: 500;
-        background-color: var(--bg-primary);
+        background-color: var(--accent-hover);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
         cursor: pointer;
         transition: all 0.3s ease;
@@ -573,7 +569,7 @@ body {
         gap: 30px;
     }
 
-    .exp-card > div {
+    .exp-card>div {
         position: relative;
         background-color: var(--bg-surface);
         color: var(--text-primary);
@@ -606,6 +602,11 @@ body {
         font-size: 12px;
         font-weight: 500;
         color: var(--text-secondary);
+    }
+
+    .exp-card p span {
+        color: var(--text-primary);
+        font-weight: 700;
     }
 
     .exp-card ul {
@@ -723,7 +724,7 @@ body {
                                     Tab Display
 -----------------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
 
     /* ------------------------------ Navigation bar ------------------------------ */
     header {
@@ -755,7 +756,7 @@ body {
 
     .nav-bar {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .nav-bar a {
@@ -808,7 +809,7 @@ body {
 
     .profile-image img {
         margin-top: 4rem;
-        width: 240px;
+        width: 200px;
         border-radius: 50%;
         border: solid 4px var(--bg-surface);
         box-shadow: 0 25px 20px -4px var(--glow_shadow), 0 10px 10px -5px var(--glow_shadow);
@@ -821,14 +822,14 @@ body {
 
     .name-title h3 {
         margin-top: 12px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: var(--text-secondary);
         font-weight: 400;
     }
 
     .name-title h1 {
         margin-top: 12px;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 800;
         background: -webkit-linear-gradient(70deg,
                 var(--text-primary),
@@ -838,7 +839,7 @@ body {
     }
 
     .name-title p {
-        font-size: 1.4rem;
+        font-size: 1.25rem;
         color: var(--text-secondary);
         font-weight: 500;
         margin-top: 8px;
@@ -891,7 +892,7 @@ body {
 
     .about-container .about-title {
         color: var(--text-primary);
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 800;
         text-align: center;
         margin: 5rem auto 3rem auto;
@@ -901,29 +902,24 @@ body {
     .about-container .about-title::before {
         content: "";
         background-color: var(--accent-primary);
-
-        height: 4px;
-        width: 100px;
-
+        height: 6px;
+        width: 80px;
         position: absolute;
-
         left: 50%;
         transform: translateX(-50%);
-
         bottom: -10px;
         border-radius: 2px;
     }
 
     .about-container .img-and-summary {
         margin: auto;
-        display: flex;
-        gap: 32px;
-        align-items: center;
-        border-radius: 12px;
+        display: flow-root;
     }
 
     .img-and-summary img {
+        float: left;
         width: 230px;
+        margin: 0 20px 12px 10px;
         border-radius: 16px;
         border: solid 1px var(--border);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
@@ -937,7 +933,7 @@ body {
     }
 
     .about-container .education-details {
-        margin: 3rem 0 1.5rem 3rem;
+        margin: 3rem 0 1.5rem 1.5rem;
     }
 
     .education-details .education-title {
@@ -951,7 +947,7 @@ body {
         position: relative;
         width: 90%;
         margin: auto;
-        padding-left: 27px;
+        padding-left: 34px;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -960,7 +956,7 @@ body {
     .education-details .edu-card::before {
         content: "";
         position: absolute;
-        left: -16px;
+        left: -12px;
         top: 0;
         width: 4px;
         height: 100%;
@@ -989,7 +985,7 @@ body {
         border-radius: 50%;
         background-color: var(--bg-surface);
         border: 4px solid var(--accent-primary);
-        left: -55px;
+        left: -58px;
         top: 26px;
         transition: all 0.3s ease;
     }
@@ -1041,7 +1037,7 @@ body {
 
     .skill-container .skill-title {
         color: var(--text-primary);
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 800;
         text-align: center;
         margin-top: 7rem;
@@ -1052,8 +1048,8 @@ body {
     .skill-container .skill-title::before {
         content: "";
         background-color: var(--accent-primary);
-        height: 4px;
-        width: 90px;
+        height: 6px;
+        width: 70px;
         position: absolute;
         left: 50%;
         bottom: -10px;
@@ -1072,8 +1068,8 @@ body {
 
     .skill-card .s-cards {
         background-color: var(--bg-surface);
-        width: 180px;
-        height: 210px;
+        width: 160px;
+        height: 190px;
         border: 1px solid var(--border);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
         border-radius: 16px;
@@ -1091,7 +1087,8 @@ body {
     }
 
     .s-cards img {
-        width: 90px;
+        width: 70px;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1113,7 +1110,7 @@ body {
 
     .project-container .project-title {
         color: var(--text-primary);
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 800;
         text-align: center;
         margin-top: 6rem;
@@ -1124,15 +1121,11 @@ body {
     .project-container .project-title::before {
         content: "";
         background-color: var(--accent-primary);
-
         height: 6px;
         width: 130px;
-
         position: absolute;
-
         left: 50%;
         bottom: -10px;
-
         transform: translateX(-50%);
         border-radius: 2px;
     }
@@ -1200,12 +1193,12 @@ body {
     }
 
     .tech-list p {
-        border: 1px solid var(--accent-hover);
         padding: 4px 12px;
-        color: var(--text-secondary);
+        color: var(--text-on-accent);
         border-radius: 8px;
+        font-size: 14px;
         font-weight: 600;
-        background-color: var(--bg-primary);
+        background-color: var(--accent-hover);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
         cursor: pointer;
         transition: all 0.3s ease;
@@ -1226,7 +1219,7 @@ body {
 
     .exp-container .exp-title {
         color: var(--text-primary);
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 800;
         text-align: center;
         margin-top: 6rem;
@@ -1248,7 +1241,7 @@ body {
 
     .exp-details .tex-exp {
         font-size: 1.75rem;
-        margin-left: 3rem;
+        margin-left: 1.5rem;
         margin-top: 4rem;
         color: var(--text-primary);
     }
@@ -1257,7 +1250,7 @@ body {
         position: relative;
         width: 90%;
         margin: 1.5rem auto 3rem auto;
-        padding-left: 73px;
+        padding-left: 53px;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -1266,7 +1259,7 @@ body {
     .exp-details .exp-card::before {
         content: "";
         position: absolute;
-        left: 30px;
+        left: 10px;
         top: 0;
         width: 4px;
         height: 100%;
@@ -1331,6 +1324,11 @@ body {
         color: var(--text-secondary);
     }
 
+    .exp-card p span {
+        color: var(--text-primary);
+        font-weight: 700;
+    }
+
     .exp-card ul {
         padding: 8px 0 8px 24px;
         font-size: 1rem;
@@ -1350,7 +1348,7 @@ body {
     }
 
     .contact-container .contact-title {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 800;
         position: relative;
         margin: 1rem 0 3rem 0;
@@ -1449,7 +1447,6 @@ body {
         margin-bottom: 1rem;
     }
 }
-
 
 /*-----------------------------------------------------------------------------------------
                                     Desktop Display
@@ -1927,17 +1924,17 @@ body {
 
     .project-desc div {
         display: flex;
-        gap: 16px;
+        gap: 14px;
         margin: 10px 0 0 12px;
     }
 
     .tech-list p {
-        border: 1px solid var(--accent-hover);
         padding: 4px 12px;
-        color: var(--text-secondary);
+        color: var(--text-on-accent);
         border-radius: 8px;
+        font-size: 14px;
         font-weight: 600;
-        background-color: var(--bg-primary);
+        background-color: var(--accent-hover);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
         cursor: pointer;
         transition: all 0.3s ease;
@@ -2061,6 +2058,11 @@ body {
         margin: 2px 0 10px 0;
         font-weight: 500;
         color: var(--text-secondary);
+    }
+
+    .exp-card p span {
+        color: var(--text-primary);
+        font-weight: 700;
     }
 
     .exp-card ul {
