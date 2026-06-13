@@ -20,14 +20,16 @@ A resonsive personal portfolio website developed using HTML, CSS, and JavaScript
 
 ## Project Structure
 
+```text
 personal-portfolio-website/
-|
-|-----images/
-|-----.gitignore.md
-|-----index.html
-|-----README.md
-|-----resume.pdf
-|-----style.css
+│
+├── images/
+├── .gitignore
+├── index.html
+├── README.md
+├── resume.pdf
+└── style.css
+```
 
 
 ## Live Demo
