@@ -32,12 +32,6 @@ personal-portfolio-website/
 ```
 
 
-## Live Demo
-
-View portfolio website here:
-https://smuthukumaran-mk.github.io/personal-portfolio-website/
-
-
 ## Author
 
 MUTHUKUMARAN S
