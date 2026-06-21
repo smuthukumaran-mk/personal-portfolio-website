@@ -6,69 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MK | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
 </head>
 
 <body>
     <header class="header">
         <div class="header-container">
-            <div class="title">
+            <div class="mk-container">
                 <a href="#home-page">
                     <h2>M<span class="title-span">K</span></h2>
                 </a>
             </div>
-            <nav class="nav-bar">
-                <a href="#home-page">Home</a>
-                <a href="#about-page">About</a>
-                <a href="#skill-page">Skills</a>
-                <a href="#project-page">Project</a>
-                <a href="#exp-page">Experience</a>
-                <a href="#contact-page">Contact</a>
-            </nav>
-            <a class="menu-bar" onclick="openSideBar()"><i class="fa-solid fa-bars"></i></a>
+            <div class="nav-container">
+                <nav class="nav-bar">
+                    <a href="#about-page">About</a>
+                    <a href="#skill-page">Skills</a>
+                    <a href="#project-page">Project</a>
+                    <a href="#exp-page">Experience</a>
+                    <a href="#contact-page">Contact</a>
+                </nav>
+                <a class="menu-bar"><i class="fa-solid fa-bars"></i></a>
+            </div>
         </div>
         <nav class="side-bar">
-                <a class="menu-close" onclick="closeSideBar()"><i class="fa-solid fa-xmark"></i></a>
-                <a class="sb" onclick="closeSideBar()" href="#home-page">Home</a>
-                <a class="sb" onclick="closeSideBar()" href="#about-page">About</a>
-                <a class="sb" onclick="closeSideBar()" href="#skill-page">Skills</a>
-                <a class="sb" onclick="closeSideBar()" href="#project-page">Project</a>
-                <a class="sb" onclick="closeSideBar()" href="#exp-page">Experience</a>
-                <a class="sb" onclick="closeSideBar()" href="#contact-page">Contact</a>
-            </nav>
+            <a class="menu-close"><i class="fa-solid fa-xmark"></i></a>
+            <a class="sb" href="#about-page">About</a>
+            <a class="sb" href="#skill-page">Skills</a>
+            <a class="sb" href="#project-page">Project</a>
+            <a class="sb" href="#exp-page">Experience</a>
+            <a class="sb" href="#contact-page">Contact</a>
+        </nav>
     </header>
 
-    <main class="main-content">
-        <section id="home-page">
+    <section id="home-page" class="odd-section">
+        <div class="container">
             <div class="home-container">
-                <div class="profile-image">
-                    <img src="images/profile-pic.jpeg" alt="profile-image">
+                <div class="hero-sum">
+                    <div class="name-and-title">
+                        <p class="home-greet">~/hello-world</p>
+                        <h1 class="home-name">MUTHUKUMARAN <span>S</span></h1>
+                        <p class="home-role">Aspiring Software Engineer</p>
+                        <P class="home-desc">Primarily focused on Java & DSA, developing strong problem-solving and
+                            logical reasoning skills. Currently transitioning from the Textile industry to a career in
+                            Software Engineering</P>
+                    </div>
+                    <div class="home-button">
+                        <a class="resume-button" href="resume.pdf"
+                            download="Muthukumaran_S_Software_Engineer_Resume.pdf">
+                            Download Resume <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a class="contact-button" href="#contact-page">Get in Touch</a>
+                    </div>
+                    <div class="home-links">
+                        <a class="home-icon links" href="https://linkedin.com/in/s-muthukumaran-mk" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="home-icon links" href="https://github.com/smuthukumaran-mk" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a class="home-icon links" href="https://instagram.com/xmuthukumaran" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="name-title">
-                    <h3>Hi, I'm</h3>
-                    <h1>MUTHUKUMARAN S</h1>
-                    <p>Aspiring Software Engineer</p>
-                </div>
-                <div class="home-button">
+                <div class="home-visual">
+                    <div class="code-card">
+                        <div class="code-bar">
+                            <span class="code-filelogo">J</span>
+                            <span class="code-filename">Portfolio.java</span>
+                        </div>
+                        <pre class="code-body"><code><span class="kw">public class</span> <span class="cls">Portfolio</span> {
 
-                    <a href="resume.pdf" download="Muthukumaran_S_Software_Engineer_Resume.pdf">
-                        <button class="down-btn">Resume
-                            <i class="fa-solid fa-download"></i>
-                        </button>
-                    </a>
+      <span class="kw">private</span> String name  = <span class="str">"Muthukumaran S"</span>;
+      <span class="kw">private</span> String role  = <span class="str">"Software Engineer"</span>;
+      <span class="kw">private</span> String stack = <span class="str">"Java + DSA"</span>;
 
+      <span class="kw">public</span> String[] getSkills() {
+            <span class="kw">return new</span> String[] {
+                <span class="str">"Java"</span>, <span class="str">"OOP"</span>,
+                <span class="str">"Data Structures"</span>,
+                <span class="str">"MySQL"</span>, <span class="str">"Git"</span>, <span class="str">"GitHub"</span>
+            };
+      }
+
+            <span class="kw">public boolean</span> isHireable() {
+                <span class="kw">return true</span>; <span class="cm">// always</span>
+            }
+}</code></pre>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <section id="about-page">
+    <section id="about-page" class="even-section">
+        <div class="container">
+            <h1 class="section-title">ABOUT</h1>
+            <h3 class="section-sub-title">The Story So Far</h3>
             <div class="about-container">
-                <h1 class="about-title">About</h1>
-                <div class="img-and-summary">
-
+                <div class="img-card">
                     <img src="images/about.png">
-
+                </div>
+                <div class="summary-card">
                     <p>
                         I'm Muthukumaran and currently pursuing a B.Tech in Information Technology at Erode
                         Sengunthar
@@ -91,70 +136,105 @@
                         production tracking to ensure timely delivery.
                     </p>
 
-                </div>
-                <div class="education-details">
-                    <h2 class="education-title">Education Details</h2>
-                    <div class="edu-card">
-                        <div class="course-card">
-                            <div class="btech">
-                                <h3>B.Tech Information Technology</h3>
-                                <p>Erode Sengunthar Engineering College, Perundurai</p>
-                                <p>Expected Graduation: 2028</p>
-                                <p>CGPA: 7.89 (Up to 3rd Semester)</p>
-                            </div>
-                            <div class="diploma">
-                                <h3>Diploma in Textile Technology</h3>
-                                <p>KSR Institute of Technology, Tiruchengode</p>
-                                <p>Graduated in 2021</p>
-                                <p>Score: 93%</p>
-                            </div>
+                    <h3 class="education-title">Education Details</h3>
+
+                    <div class="course-card btech">
+                        <div>
+                            <h3 class="degree">B.Tech Information Technology</h3>
+                            <p>Erode Sengunthar Engineering College, Perundurai.</p>
+                        </div>
+                        <div>
+                            <p>CGPA: 7.89(Up to 3rd Semester)</p>
+                            <p>2025 - 2028</p>
+                        </div>
+                    </div>
+                    <div class="course-card diploma">
+                        <div>
+                            <h3 class="degree">Diploma in Textile Technology</h3>
+                            <p>KSR Institute of Technology, Tiruchengode</p>
+                        </div>
+                        <div>
+                            <p>Percentage: 93%</p>
+                            <p>2019 - 2021</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <section id="skill-page">
-            <div class="skill-container">
-                <h1 class="skill-title">Skills</h1>
+    <section id="skill-page" class="odd-section">
+        <div class="container">
+            <h1 class="section-title">SKILLS</h1>
+            <h3 class="section-sub-title">Technical Toolkit</h3>
+            <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="s-cards">
-                        <img src="images/Java.png" alt="java">
-                        <p>Java</p>
-                    </div>
-                    <div class="s-cards">
-                        <img class="mysql" src="images/MySQL.png" alt="sql">
-                        <p>MySQL</p>
-                    </div>
-                    <div class="s-cards">
-                        <img src="images/HTML5.png" alt="html">
-                        <p>HTML</p>
-                    </div>
-                    <div class="s-cards">
-                        <img src="images/CSS3.png" alt="css">
-                        <p>CSS</p>
-                    </div>
-                    <div class="s-cards">
-                        <img src="images/git.png" alt="git">
-                        <p>Git</p>
-                    </div>
-                    <div class="s-cards">
-                        <img src="images/github.png" alt="github">
-                        <p>GitHub</p>
-                    </div>
-                    <div class="s-cards">
-                        <img src="images/vscode.png" alt="vscode">
-                        <p>Visual Studio Code</p>
+                    <div class="skill-card-icon">☕</div>
+                    <h3 class="skill-card-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Java</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
                     </div>
                 </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">🗄️</div>
+                    <h3 class="skill-card-title">Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">🛠️</div>
+                    <h3 class="skill-card-title">Dev Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">🧠</div>
+                    <h3 class="skill-card-title">Core Concepts</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">DSA</span>
+                        <span class="skill-tag primary">OOP</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-card-icon">🤝</div>
+                    <h3 class="skill-card-title">Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Adaptability</span>
+                    </div>
+                </div>
+
+                <div class="skill-card leetcode-card">
+                    <div class="skill-card-icon">⚡</div>
+                    <h3 class="skill-card-title">LeetCode</h3>
+                    <p class="leetcode-sub">Actively solving problems daily to strengthen algorithmic thinking.</p>
+                    <a href="https://leetcode.com/u/s-muthukumaran/" target="_blank" rel="noopener"
+                        class="leetcode-link mono">View Profile →</a>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <section id="project-page">
-            <div class="project-container">
-                <h1 class="project-title">Projects</h1>
+    <section id="project-page" class="even-section">
+        <div class="container">
+            <h1 class="section-title">PROJECTS</h1>
+            <h3 class="section-sub-title">What I've Made</h3>
+            <div>
                 <div class="project-card">
                     <div class="p-cards">
                         <div class="project-tile">
@@ -166,7 +246,8 @@
                                 <li>Developed a responsive personal portfolio.</li>
                                 <li>Designed modern and responsive UI to showcase technical skills, projects, education
                                     and contact details.</li>
-                                <li>Implemented responsive layouts for desktop, tab, and mobile screen compatibility.</li>
+                                <li>Implemented responsive layouts for desktop, tab, and mobile screen compatibility.
+                                </li>
                                 <li>Hosted the project using GitHub pages.</li>
                             </ul>
                             <h4 class="tech">Technologies used: </h4>
@@ -179,13 +260,16 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="exp-page">
-            <div class="exp-container">
-                <h1 class="exp-title">Experience</h1>
+    <section id="exp-page" class="odd-section">
+        <div class="container">
+            <h1 class="section-title">EXPERIENCE</h1>
+            <h3 class="section-sub-title">Prior Experience in the Textile Industry</h3>
+            <div>
                 <div class="exp-details">
-                    <h2 class="tex-exp">Prior Experience in the Textile Industry</h2>
+
                     <div class="exp-card">
                         <div class="polyelastic">
                             <h3>Merchandiser</h3>
@@ -257,53 +341,49 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
 
-    <footer id="contact-page">
-        <div class="contact-container">
-            <h1 class="contact-title">Contact</h1>
-            <div class="contact-links">
-                <a class="email" href="mailto:smuthukumaran009@gmail.com" target="_blank">
-                    <i class="fa-regular fa-envelope"></i>
-                    smuthukumaran009@gmail.com
-                </a>
-                <a>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Tiruppur, Tamil Nadu - 641 663.
-                </a>
+    <footer id="contact-page" class="even-section">
+        <div class="container">
+            <h1 class="section-title">CONTACT</h1>
+            <div>
+                <div class="contact-links">
+                    <a class="email" href="mailto:smuthukumaran009@gmail.com" target="_blank">
+                        <i class="fa-regular fa-envelope"></i>
+                        smuthukumaran009@gmail.com
+                    </a>
+                    <a>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Tiruppur, Tamil Nadu - 641 663.
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a class="linkedin" href="https://linkedin.com/in/s-muthukumaran-mk" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a class="github" href="https://github.com/smuthukumaran-mk" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a class="leetcode" href="https://leetcode.com/u/s-muthukumaran/" target="_blank">
+                        <img src="images/leetcode.png">
+                    </a>
+                    <a class="instagram" href="https://instagram.com/xmuthukumaran" target="_blank">
+                        <img src="images/Instagram.png">
+                    </a>
+                </div>
+                <p>&copy; 2026 Muthukumarans S. All Rights Reserved.</p>
             </div>
-            <div class="social-links">
-                <a class="linkedin" href="https://linkedin.com/in/s-muthukumaran-mk" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a class="github" href="https://github.com/smuthukumaran-mk" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
 
-                <a class="leetcode" href="https://leetcode.com/u/s-muthukumaran/" target="_blank">
-                    <img src="images/leetcode.png">
-                </a>
-                <a class="instagram" href="https://instagram.com/xmuthukumaran" target="_blank">
-                    <img src="images/Instagram.png">
-                </a>
-            </div>
-            <p>&copy; 2026 Muthukumarans S. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        function openSideBar() {
-            const openSide = document.querySelector('.side-bar')
-            openSide.style.display = 'flex'
-        }
-        function closeSideBar() {
-            const openSide = document.querySelector('.side-bar')
-            openSide.style.display = 'none'
-        }
+
     </script>
-    
+
 </body>
 
 </html>
