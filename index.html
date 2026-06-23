@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MK | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -17,12 +18,10 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <div class="mk-container">
-                <a href="#home-page">
-                    <h2>M<span class="title-span">K</span></h2>
+            <div class="navbar-container">
+                <a class="mk-logo" href="#home-page">
+                    M<span>K</span>
                 </a>
-            </div>
-            <div class="nav-container">
                 <nav class="nav-bar">
                     <a href="#about-page">About</a>
                     <a href="#skill-page">Skills</a>
@@ -30,17 +29,25 @@
                     <a href="#exp-page">Experience</a>
                     <a href="#contact-page">Contact</a>
                 </nav>
-                <a class="menu-bar"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="sidebar-container">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <nav class="side-bar">
+                    <a class="sb" href="#home-page">Home</a>
+                    <a class="sb" href="#about-page">About</a>
+                    <a class="sb" href="#skill-page">Skills</a>
+                    <a class="sb" href="#project-page">Project</a>
+                    <a class="sb" href="#exp-page">Experience</a>
+                    <a class="sb" href="#contact-page">Contact</a>
+                </nav>
             </div>
         </div>
-        <nav class="side-bar">
-            <a class="menu-close"><i class="fa-solid fa-xmark"></i></a>
-            <a class="sb" href="#about-page">About</a>
-            <a class="sb" href="#skill-page">Skills</a>
-            <a class="sb" href="#project-page">Project</a>
-            <a class="sb" href="#exp-page">Experience</a>
-            <a class="sb" href="#contact-page">Contact</a>
-        </nav>
+        
     </header>
 
     <section id="home-page" class="odd-section">
@@ -82,21 +89,21 @@
                         </div>
                         <pre class="code-body"><code><span class="kw">public class</span> <span class="cls">Portfolio</span> {
 
-      <span class="kw">private</span> String name  = <span class="str">"Muthukumaran S"</span>;
-      <span class="kw">private</span> String role  = <span class="str">"Software Engineer"</span>;
-      <span class="kw">private</span> String stack = <span class="str">"Java + DSA"</span>;
+    <span class="kw">private</span> String name  = <span class="str">"Muthukumaran S"</span>;
+    <span class="kw">private</span> String role  = <span class="str">"Software Engineer"</span>;
+    <span class="kw">private</span> String stack = <span class="str">"Java + DSA"</span>;
 
-      <span class="kw">public</span> String[] getSkills() {
-            <span class="kw">return new</span> String[] {
-                <span class="str">"Java"</span>, <span class="str">"OOP"</span>,
-                <span class="str">"Data Structures"</span>,
-                <span class="str">"MySQL"</span>, <span class="str">"Git"</span>, <span class="str">"GitHub"</span>
-            };
-      }
+    <span class="kw">public</span> String[] getSkills() {
+        <span class="kw">return new</span> String[] {
+            <span class="str">"Java"</span>, <span class="str">"OOP"</span>,
+            <span class="str">"Data Structures"</span>,
+            <span class="str">"MySQL"</span>, <span class="str">"Git"</span>, <span class="str">"GitHub"</span>
+        };
+    }
 
-            <span class="kw">public boolean</span> isHireable() {
-                <span class="kw">return true</span>; <span class="cm">// always</span>
-            }
+    <span class="kw">public boolean</span> isHireable() {
+        <span class="kw">return true</span>; <span class="cm">// always</span>
+    }
 }</code></pre>
                     </div>
                 </div>
@@ -141,21 +148,22 @@
                     <div class="course-card btech">
                         <div>
                             <h3 class="degree">B.Tech Information Technology</h3>
-                            <p>Erode Sengunthar Engineering College, Perundurai.</p>
+                            <p class="result">CGPA: 7.89</p>
+                            
                         </div>
                         <div>
-                            <p>CGPA: 7.89(Up to 3rd Semester)</p>
-                            <p>2025 - 2028</p>
+                            <p class="college">Erode Sengunthar Engineering College, Perundurai.</p>
+                            <p class="course-duration">2025 - 2028</p>
                         </div>
                     </div>
                     <div class="course-card diploma">
                         <div>
                             <h3 class="degree">Diploma in Textile Technology</h3>
-                            <p>KSR Institute of Technology, Tiruchengode</p>
+                            <p class="result">Percentage: 93%</p>
                         </div>
                         <div>
-                            <p>Percentage: 93%</p>
-                            <p>2019 - 2021</p>
+                            <p class="college">KSR Institute of Technology, Tiruchengode</p>
+                            <p class="course-duration">2019 - 2021</p>
                         </div>
                     </div>
                 </div>
@@ -233,29 +241,35 @@
     <section id="project-page" class="even-section">
         <div class="container">
             <h1 class="section-title">PROJECTS</h1>
-            <h3 class="section-sub-title">What I've Made</h3>
-            <div>
+            <h3 class="section-sub-title">What I've Built</h3>
+            <div class="project-grid">
                 <div class="project-card">
-                    <div class="p-cards">
-                        <div class="project-tile">
-                            <img src="images/portfolio-tile.png">
+                    <div class="project-title">
+                        <h3 class="p-title">Personal Portfolio Website</h3>
+                    </div>
+                    <div class="project-desc">
+                        <p class="project-spec">
+                            Developed a responsive personal portfolio.
+                            <br>
+                            <br>
+                            Designed modern and responsive UI to showcase technical skills, projects, education and contact details.
+                            <br>
+                            <br>
+                            Implemented responsive layouts for desktop, tab, and mobile screen compatibility.
+                            <br>
+                            <br>
+                            Hosted the project using GitHub pages.
+                        </p>
+                        <h4 class="tech">Technologies used: </h4>
+                        <div class="tech-list">
+                            <p>HTML</p>
+                            <p>CSS</p>
                         </div>
-                        <div class="project-desc">
-                            <h3>Personal Portfolio</h3>
-                            <ul>
-                                <li>Developed a responsive personal portfolio.</li>
-                                <li>Designed modern and responsive UI to showcase technical skills, projects, education
-                                    and contact details.</li>
-                                <li>Implemented responsive layouts for desktop, tab, and mobile screen compatibility.
-                                </li>
-                                <li>Hosted the project using GitHub pages.</li>
-                            </ul>
-                            <h4 class="tech">Technologies used: </h4>
-                            <div class="tech-list">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JavaScript</p>
-                            </div>
+                        <div class="project-status">
+                            <p class="current-status">Live</p>
+                            <a class="project-icon links" href="https://github.com/smuthukumaran-mk" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -266,117 +280,141 @@
     <section id="exp-page" class="odd-section">
         <div class="container">
             <h1 class="section-title">EXPERIENCE</h1>
-            <h3 class="section-sub-title">Prior Experience in the Textile Industry</h3>
-            <div>
-                <div class="exp-details">
-
-                    <div class="exp-card">
-                        <div class="polyelastic">
-                            <h3>Merchandiser</h3>
-                            <div class="company">
-                                <h4>Polyelastic Private Limited</h4>
-                                <h4>Nov 2024 - Apr 2025</h4>
-                            </div>
-                            <p>Chennai, Tamil Nadu, India.</p>
-                            <p><span>Products Handled: </span>Knitted, Woven, and Jacquard Elastic</p>
-
-                            <h4>Key Responsibilities:</h4>
-                            <ul>
-                                <li>Handled complete merchandising cycle from yarn sourcing to goods shipment.</li>
-                                <li>Coordinated with clients regarding product development, approvals, shipment updates,
-                                    and future order planning.</li>
-                                <li>Handled development sample submissions and followed up for client approvals.</li>
-                                <li>Monitored production processes including knitting, dyeing, packing, quality
-                                    checking, and dispatch process.</li>
-                                <li>Maintained T&A follow-ups to ensure timely production and delivery schedules.</li>
-                                <li>Managed shipment notifications and shared shipment documents with clients.</li>
-                            </ul>
+            <h3 class="section-sub-title">Prior Industry Experience in the Textile Industry</h3>
+            <div class="exp-details">
+                <div class="exp-card">
+                    <div class="polyelastic company-card">
+                        <div class="job-info">
+                            <h3 class="role">Merchandiser</h3>
+                            <p class="duration">Nov 2024 - Apr 2025</p>
                         </div>
-                        <div class="sp">
-                            <h3>Assistant Merchandiser</h3>
-                            <div class="company">
-                                <h4>S.P. Apparels LTD</h4>
-                                <h4>Oct 2023 - Oct 2024</h4>
-                            </div>
-                            <p>Avinashi, Tiruppur, Tamil Nadu, India.</p>
-                            <p><span>Buyers Handled: </span>Blues - George</p>
-
-                            <h4>Key Responsibilities:</h4>
-                            <ul>
-                                <li>Handled complete merchandising cycle from yarn sourcing to goods shipment.</li>
-                                <li>Coordinated with Senior Merchandisers on costing and price negotiation with clients.
-                                </li>
-                                <li>Coordinated with clients via email regarding product development, approvals,
-                                    shipment updates, and future order planning.</li>
-                                <li>Handled sample submissions including development samples, fit samples, PP (pre
-                                    production) samples, and TOP (Top of Production) samples, and followed up for client
-                                    approvals.</li>
-                                <li>Maintained T&A follow-ups to ensure timely production and delivery schedules.</li>
-                                <li>Managed shipment notifications and shared shipment documents with clients.</li>
-                            </ul>
+                        <div class="company-info">
+                            <h4 class="company-name">Polyelastic Private Limited</h4>
+                            <p class="company-location">Chennai, Tamil Nadu, India.</p>
                         </div>
-                        <div class="rcm">
-                            <h3>Junior Merchandiser</h3>
-                            <div class="company">
-                                <h4>Royal Classic Mills (P) LTD</h4>
-                                <h4>Aug 2021 - Sep 2023</h4>
-                            </div>
-                            <p>Tiruppur, Tamil Nadu, India.</p>
-                            <p><span>Buyers Handled: </span>Gap, OldNavy</p>
-
-                            <h4>Key Responsibilities:</h4>
-                            <ul>
-                                <li>Handled merchandising operations from product development to production file
-                                    handover.</li>
-                                <li>Prepared and updated sample follow-up charts with details including style reference,
-                                    colorways and artwork details, embellishment details, sewing thread colors, and
-                                    sewing trim details as per the BOM (Bill of Material).</li>
-                                <li>Coordinated with the sample team to ensure on-time sample submission.</li>
-                                <li>Handled sample dispatch and shared tracking details with senior team members.</li>
-                                <li>Prepared production files including complete order details and approval copies.</li>
-                                <li>Conducted PPM (Pre-Production Meetings) with production teams to discuss order
-                                    requirements, production details, and shipment schedules.</li>
-                            </ul>
+                        <p class="product-types"><span>Products Handled: </span>Knitted, Woven, and Jacquard Elastic</p>
+                        <h4 class="jd-title">Key Responsibilities:</h4>
+                        <ul class="jd">
+                            <li>Handled complete merchandising cycle from yarn sourcing to goods shipment.</li>
+                            <li>Coordinated with clients regarding product development, approvals, shipment updates,
+                                and future order planning.</li>
+                            <li>Handled development sample submissions and followed up for client approvals.</li>
+                            <li>Monitored production processes including knitting, dyeing, packing, quality
+                                checking, and dispatch process.</li>
+                            <li>Maintained T&A follow-ups to ensure timely production and delivery schedules.</li>
+                            <li>Managed shipment notifications and shared shipment documents with clients.</li>
+                        </ul>
+                    </div>
+                    <div class="sp company-card">
+                        <div class="job-info">
+                            <h3 class="role">Assistant Merchandiser</h3>
+                            <p class="duration">Oct 2023 - Oct 2024</p>
                         </div>
+                        <div class="company-info">
+                            <h4 class="company-name">S.P. Apparels LTD</h4>
+                            <p class="company-location">Avinashi, Tiruppur, Tamil Nadu, India.</p>
+                        </div>                       
+                        <p class="product-types"><span>Buyers Handled: </span>Blues - George</p>
+                        <h4 class="jd-title">Key Responsibilities:</h4>
+                        <ul class="jd">
+                            <li>Handled complete merchandising cycle from yarn sourcing to goods shipment.</li>
+                            <li>Coordinated with Senior Merchandisers on costing and price negotiation with clients.
+                            </li>
+                            <li>Coordinated with clients via email regarding product development, approvals,
+                                shipment updates, and future order planning.</li>
+                            <li>Handled sample submissions including development samples, fit samples, PP (pre
+                                production) samples, and TOP (Top of Production) samples, and followed up for client
+                                approvals.</li>
+                            <li>Maintained T&A follow-ups to ensure timely production and delivery schedules.</li>
+                            <li>Managed shipment notifications and shared shipment documents with clients.</li>
+                        </ul>
+                    </div>
+                    <div class="rcm company-card">
+                        
+
+                        <div class="job-info">
+                            <h3 class="role">Junior Merchandiser</h3>
+                            <p class="duration">Aug 2021 - Sep 2023</p>
+                        </div>
+                        <div class="company-info">
+                            <h4 class="company-name">Royal Classic Mills (P) LTD</h4>
+                            <p class="company-location">Tiruppur, Tamil Nadu, India.</p>
+                        </div>
+                        <p class="product-types"><span>Buyers Handled: </span>Gap, OldNavy</p>
+                        <h4 class="jd-title">Key Responsibilities:</h4>
+                        <ul class="jd">
+                            <li>Handled merchandising operations from product development to production file
+                                handover.</li>
+                            <li>Prepared and updated sample follow-up charts with details including style reference,
+                                colorways and artwork details, embellishment details, sewing thread colors, and
+                                sewing trim details as per the BOM (Bill of Material).</li>
+                            <li>Coordinated with the sample team to ensure on-time sample submission.</li>
+                            <li>Handled sample dispatch and shared tracking details with senior team members.</li>
+                            <li>Prepared production files including complete order details and approval copies.</li>
+                            <li>Conducted PPM (Pre-Production Meetings) with production teams to discuss order
+                                requirements, production details, and shipment schedules.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <footer id="contact-page" class="even-section">
         <div class="container">
             <h1 class="section-title">CONTACT</h1>
-            <div>
-                <div class="contact-links">
-                    <a class="email" href="mailto:smuthukumaran009@gmail.com" target="_blank">
+            <h3 class="section-sub-title">Let's Connect</h3>
+            <p class="footer-summary">Open to internships, and entry-level opportunities. Feel free to reach out!</p>
+            <div class="contact-link-container">
+                <div class="personal-info">
+                    <div class="email-card personal-info-card">
                         <i class="fa-regular fa-envelope"></i>
-                        smuthukumaran009@gmail.com
-                    </a>
-                    <a>
+                        <div>
+                            <p class="contact-domain">Email</p>
+                            <a class="email contact-page-link" href="mailto:smuthukumaran009@gmail.com" target="_blank">
+                                smuthukumaran009@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="location-card personal-info-card">
                         <i class="fa-solid fa-location-dot"></i>
-                        Tiruppur, Tamil Nadu - 641 663.
-                    </a>
+                        <div>
+                            <p class="contact-domain">Location</p>
+                            <p class="contact-page-link">Tiruppur, Tamil Nadu - 641 663.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a class="linkedin" href="https://linkedin.com/in/s-muthukumaran-mk" target="_blank">
+                <div class="social-media">
+                    <div class="linkedin-card social-media-card">
                         <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a class="github" href="https://github.com/smuthukumaran-mk" target="_blank">
+                        <div>
+                            <p class="contact-domain">LinkedIn</p>
+                            <a class="linkedin contact-page-link" href="https://linkedin.com/in/s-muthukumaran-mk" target="_blank">
+                                s-muthukumaran-mk
+                            </a>
+                        </div>
+                    </div>
+                    <div class="github-card social-media-card">
                         <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a class="leetcode" href="https://leetcode.com/u/s-muthukumaran/" target="_blank">
-                        <img src="images/leetcode.png">
-                    </a>
-                    <a class="instagram" href="https://instagram.com/xmuthukumaran" target="_blank">
-                        <img src="images/Instagram.png">
-                    </a>
+                        <div>
+                            <p class="contact-domain">GitHub</p>
+                            <a class="github contact-page-link" href="https://github.com/smuthukumaran-mk" target="_blank">
+                                smuthukumaran-mk
+                            </a>
+                        </div>
+                    </div>
+                    <div class="instagram-card social-media-card">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div>
+                            <p class="contact-domain">Instagram</p>
+                            <a class="instagram contact-page-link" href="https://instagram.com/xmuthukumaran" target="_blank">
+                                xmuthukumaran
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <p>&copy; 2026 Muthukumarans S. All Rights Reserved.</p>
             </div>
-
+            <p class="copy-right">&copy; 2026 Muthukumarans S. All Rights Reserved.</p>
         </div>
     </footer>
 
