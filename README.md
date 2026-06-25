@@ -32,7 +32,7 @@ personal-portfolio-website/
 
 ## Live Link
 
-* Visit page here - https://smuthukumaran-mk.github.io/personal-portfolio-website/
+* Visit my portfolio here - https://smuthukumaran-mk.github.io/personal-portfolio-website/
 
 
 ## Author
