@@ -30,9 +30,9 @@ personal-portfolio-website/
 └── style.css
 ```
 
-## Live Link
+## Live Demo
 
-* Visit my portfolio here - https://smuthukumaran-mk.github.io/personal-portfolio-website/
+* Visit portfolio here - https://smuthukumaran-mk.github.io/personal-portfolio-website/
 
 
 ## Author
