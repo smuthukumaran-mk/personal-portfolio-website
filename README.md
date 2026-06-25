@@ -1,6 +1,6 @@
 # personal-portfolio-website
 
-A resonsive personal portfolio website developed using HTML, CSS, and JavaScript to showcase my skills, projects, professional experience, education background, and contact details.
+A resonsive personal portfolio website developed using HTML, and CSS to showcase my skills, projects, professional experience, education background, and contact details.
 
 ## Features
 * Responsive layouts for Mobile, Tablet, and Laptop devices.
@@ -16,7 +16,6 @@ A resonsive personal portfolio website developed using HTML, CSS, and JavaScript
 
 * HTML5
 * CSS3
-* JavaScript
 
 ## Project Structure
 
@@ -31,8 +30,13 @@ personal-portfolio-website/
 └── style.css
 ```
 
+## Live Link
+
+* Visit page here - https://smuthukumaran-mk.github.io/personal-portfolio-website/
+
 
 ## Author
 
 MUTHUKUMARAN S
 * LinkedIn - https://linkedin.com/s-muthukumaran-mk/
+* Instagram - https://instagram.com/xmuthukumaran/

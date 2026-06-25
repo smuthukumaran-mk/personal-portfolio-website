@@ -581,7 +581,7 @@ header {
 .project-status {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .project-status .current-status {
@@ -894,16 +894,16 @@ header {
     }
 
     .project-status {
-        padding: 12px 0 6px 0;
+        padding-top: 12px;
     }
 
     .project-status .current-status {
-        font-size: 12px;
+        font-size: 10px;
         padding: 2px 12px;
     }
 
     .project-status .project-icon {
-        font-size: 18px;
+        font-size: 20px;
         cursor: pointer;
     }
 
