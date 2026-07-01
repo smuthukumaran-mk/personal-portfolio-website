@@ -575,9 +575,9 @@ header {
 }
 
 .tech-list p {
-    background: var(--cyan-glow);
+    background: var(--surface-2);
     border: 1px solid var(--cyan-dim);
-    color: var(--cyan);
+    color: var(--muted);
     border-radius: 4px;
 }
 
@@ -701,7 +701,7 @@ header {
 @media screen and (max-width: 425px) {
 
     .section-title {
-        font-size: 12px;
+        font-size: 0.7rem;
         padding-left: 8px;
         margin-bottom: 12px;
         letter-spacing: 2px;
@@ -709,7 +709,7 @@ header {
     }
 
     .section-title::before {
-        width: 3px;
+        width: 2.5px;
         height: 100%;
         left: 0;
         bottom: 1px;
@@ -717,7 +717,7 @@ header {
     }
 
     .section-sub-title {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         font-weight: 700;
         padding-bottom: 18px;
     }
@@ -744,23 +744,22 @@ header {
     .hero-eyebrow {
         font-size: 12px;
     }
+    .hero-text {
+        width: 100%;
+    }
     .hero-name {
         font-size: 1.8rem;
         font-weight: 700;
     }
     .hero-role {
-        font-size: 14px;
+        font-size: 0.85rem;
     }
     .hero-sub {
-        font-size: 12px;
+        font-size: 0.85rem;
     }
-
     .hero-actions {
         flex-direction: column;
         align-items: center;
-    }
-    .hero-text {
-        width: 100%;
     }
     .hero-visual {
         width: 100%;
@@ -770,7 +769,7 @@ header {
         overflow-x: auto;
     }
     .code-block {
-        font-size: 10px;
+        font-size: 0.73rem;
     }
 
     .btn {
@@ -805,11 +804,11 @@ header {
 
 
     .summary-card p {
-        font-size: 12px;
+        font-size: 0.85rem;
     }
 
     .education-title {
-        padding: 18px 0 12px 0;
+        padding: 20px 0 12px 0;
         font-size: 14px;
     }
 
@@ -819,17 +818,17 @@ header {
     }
 
     .course-card .degree {
-        font-size: 13px;
+        font-size: 0.85rem;
         font-weight: 500;
     }
 
     .course-card .college,
     .course-card .course-duration {
-        font-size: 10px;
+        font-size: 0.8rem;
     }
 
     .course-card .result {
-        font-size: 10px;
+        font-size: 0.65rem;
         font-weight: 500;
         padding: 3px 8px;
     }
@@ -850,7 +849,8 @@ header {
     }
 
     .skill-tag {
-        font-size: 10px;
+        font-size: 0.65rem;
+        font-weight: 600;
         padding: 3px 12px;
     }
 
@@ -870,17 +870,17 @@ header {
     }
 
     .p-title {
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 1rem;
+        font-weight: 700;
     }
 
     .project-spec {
-        font-size: 12px;
+        font-size: 0.85rem;
         line-height: 1.7;
     }
 
     .tech {
-        font-size: 14px;
+        font-size: 0.85rem;
         font-weight: 600;
         padding: 12px 0 4px 0;
     }
@@ -898,7 +898,7 @@ header {
     }
 
     .project-status {
-        padding-top: 12px;
+        padding-top: 14px;
     }
 
     .project-status .current-status {
@@ -948,12 +948,12 @@ header {
 
     .job-info .duration,
     .company-info .company-location {
-        font-size: 12px;
+        font-size: 0.85rem;
         font-weight: 500;
     }
 
     .company-info .company-name {
-        font-size: 12px;
+        font-size: 0.85rem;
         font-weight: 500;
     }
 
@@ -963,26 +963,26 @@ header {
     }
 
     .product-types {
-        font-size: 12px;
+        font-size: 0.85rem;
         color: var(--white);
         padding-bottom: 8px;
         font-weight: 500;
     }
 
     .jd-title {
-        font-size: 12px;
+        font-size: 0.85rem;
         font-weight: 500;
         padding-bottom: 4px;
     }
 
     .jd li {
-        font-size: 12px;
+        font-size: 0.85rem;
         line-height: 1.7;
     }
 
 
     .footer-summary {
-        font-size: 12px;
+        font-size: 0.85rem;
         padding-bottom: 2rem;
     }
 
@@ -995,11 +995,12 @@ header {
     .social-media {
         flex-direction: column;
         gap: 8px;
-        font-size: 12px;
+        font-size: 0.8rem;
 
     }
     .contact-domain {
         padding-bottom: 2px;
+        font-weight: 400;
     }
 
     .personal-info-card,
@@ -1012,10 +1013,12 @@ header {
     .contact-link-container i {
         font-size: 18px;
     }
-
+    .contact-page-link {
+        font-size: 0.85rem;
+    }
 
     .copy-right {
-        font-size: 12px;
+        font-size: 0.85rem;
         color: var(--muted);
         text-align: center;
         padding-top: 2rem;
@@ -1029,7 +1032,7 @@ header {
 @media screen and (min-width: 426px) and (max-width: 768px) {
 
     .section-title {
-        font-size: 16px;
+        font-size: 0.8rem;
         padding-left: 8px;
         margin-bottom: 12px;
         letter-spacing: 2px;
@@ -1045,7 +1048,7 @@ header {
     }
 
     .section-sub-title {
-        font-size: 28px;
+        font-size: 1.28rem;
         font-weight: 700;
         padding-bottom: 18px;
     }
@@ -1066,6 +1069,15 @@ header {
     .hero-name {
         font-size: clamp(2.6rem, 8vw, 4.5rem);
     }
+    .hero-role {
+        font-size: 0.95rem;
+    }
+    .hero-sub {
+        font-size: 0.90rem;
+    }
+    .code-block {
+        font-size: 0.88rem;
+    }
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -1079,13 +1091,13 @@ header {
 
 
     .summary-card p {
-        font-size: 14px;
+        font-size: 0.93rem;
     }
 
     .education-title {
         font-size: 1rem;
         padding: 22px 0 12px 0;
-        font-size: 18px;
+        font-size: 1.05rem;
     }
 
     .course-card .degree,
@@ -1094,13 +1106,13 @@ header {
     }
 
     .course-card .degree {
-        font-size: 1rem;
+        font-size: 0.95rem;
         font-weight: 600;
     }
 
     .course-card .college,
     .course-card .course-duration {
-        font-size: 14px;
+        font-size: 0.95rem;
     }
 
     .course-card .result {
@@ -1154,35 +1166,33 @@ header {
     }
 
     .p-title {
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 700;
     }
 
     .project-spec {
-        font-size: 14px;
+        font-size: 0.93rem;
         line-height: 1.7;
     }
 
     .tech {
-        font-size: 14px;
+        font-size: 0.93rem;
         font-weight: 600;
         padding: 12px 0 4px 0;
     }
 
     .tech-list {
-        gap: 8px;
-        font-size: 12px;
-        padding: 4px 0 10px 0;
+        gap: 10px;
     }
 
     .tech-list p {
+        padding: 2px 12px;
         font-size: 12px;
         font-weight: 600;
-        padding: 3px 12px;
     }
 
     .project-status {
-        padding-top: 12px;
+        padding-top: 18px;
     }
 
     .project-status .current-status {
@@ -1226,21 +1236,21 @@ header {
     }
 
     .job-info .role {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
 
     .job-info .duration,
     .company-info .company-location {
-        font-size: 14px;
+        font-size: 0.93rem;
     }
 
     .company-info .company-name {
-        font-size: 14px;
+        font-size: 0.93rem;
         font-weight: 500;
     }
 
     .product-types {
-        font-size: 14px;
+        font-size: 0.93rem;
         color: var(--white);
         padding: 10px 0;
         font-weight: 400;
@@ -1248,19 +1258,19 @@ header {
 
 
     .jd-title {
-        font-size: 14px;
+        font-size: 0.93rem;
         font-weight: 600;
         padding-bottom: 4px;
     }
 
     .jd li {
-        font-size: 14px;
+        font-size: 0.93rem;
         line-height: 1.7;
     }
 
 
     .footer-summary {
-        font-size: 14px;
+        font-size: 0.93rem;
         padding-bottom: 2rem;
     }
 
@@ -1272,11 +1282,13 @@ header {
     .personal-info,
     .social-media {
         gap: 12px;
-        font-size: 14px;
+        font-size: 0.85rem;
         flex-wrap: wrap;
 
     }
-
+    .contact-page-link {
+        font-size: 0.90rem;
+    }
     .personal-info-card,
     .social-media-card {
         align-items: center;
@@ -1290,7 +1302,7 @@ header {
     }
 
     .copy-right {
-        font-size: 14px;
+        font-size: 0.93rem;
         color: var(--muted);
         text-align: center;
         padding-top: 2.5rem;
@@ -1335,7 +1347,7 @@ header {
 
 @media screen and (min-width: 769px) {
     .section-title {
-        font-size: 16px;
+        font-size: 0.9rem;
         padding-left: 8px;
         margin-bottom: 12px;
         letter-spacing: 2px;
@@ -1351,7 +1363,7 @@ header {
     }
 
     .section-sub-title {
-        font-size: 28px;
+        font-size: 1.45rem;
         font-weight: 700;
         padding-bottom: 18px;
     }
@@ -1387,37 +1399,41 @@ header {
         width: 100%;
     }
 
-
-
+    .hero-sub {
+        font-size: 0.93rem;
+    }
+    .code-block {
+        font-size: 0.93rem;
+    }
     .about-container {
         gap: 1.5rem;
     }
 
-    .summary-card {
+    .summary-card p {
         line-height: 1.7;
-        font-size: 16px;
+        font-size: 0.95rem;
     }
 
     .education-title {
-        padding: 14px 0 8px 0;
-        font-size: 1rem;
+        padding: 24px 0 8px 0;
+        font-size: 1.05rem;
         font-weight: 700;
     }
 
     .degree {
-        font-size: 1rem;
+        font-size: 0.98rem;
         font-weight: 700;
     }
 
     .result {
         padding: 2px 8px;
-        font-size: 12px;
+        font-size: 0.80rem;
         font-weight: 500;
     }
 
     .college,
     .course-duration {
-        font-size: 14px;
+        font-size: 0.95rem;
     }
 
 
@@ -1463,17 +1479,17 @@ header {
         transform: translateY(-3px);
     }
     .p-title {
-        font-size: 1rem;
+        font-size: 1.15rem;
         font-weight: 700;
     }
 
     .project-spec {
-        font-size: 14px;
+        font-size: 0.95rem;
     }
 
     .tech {
         padding: 12px 0 6px 0;
-        font-size: 14px;
+        font-size: 0.95rem;
         font-weight: 500;
     }
 
@@ -1483,17 +1499,17 @@ header {
 
     .tech-list p {
         padding: 2px 12px;
-        font-size: 12px;
+        font-size: 0.83rem;
         font-weight: 600;
     }
 
     .project-status {
-        padding-top: 14px;
+        padding-top: 20px;
     }
 
     .current-status {
         padding: 1px 12px;
-        font-size: 14px;
+        font-size: 0.85rem;
         font-weight: 600;
     }
 
@@ -1520,33 +1536,33 @@ header {
     }
 
     .job-info .role {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
 
     .company-info .company-name {
-        font-size: 14px;
+        font-size: 0.95rem;
         font-weight: 400;
     }
 
     .job-info .duration,
     .company-info .company-location {
-        font-size: 14px;
+        font-size: 0.95rem;
         font-weight: 400;
     }
 
     .product-types {
-        font-size: 14px;
+        font-size: 0.95rem;
         padding: 6px 0;
     }
 
     .jd-title {
-        font-size: 14px;
+        font-size: 0.95rem;
         font-weight: 500;
         padding: 2px 0 4px 0;
     }
 
     .jd li {
-        font-size: 14px;
+        font-size: 0.95rem;
         line-height: 1.7
     }
 
@@ -1557,7 +1573,7 @@ header {
     }
 
     .footer-summary {
-        font-size: 14px;
+        font-size: 0.95rem;
         padding-bottom: 2rem;
     }
 
@@ -1570,18 +1586,21 @@ header {
     .social-media-card {
         padding: 3px 32px 3px 16px;
         align-items: center;
-        font-size: 14px;
+        font-size: 0.85rem;
         gap: 1rem;
     }
 
     .contact-link-container i {
         font-size: 20px;
     }
+    .contact-page-link {
+        font-size: 0.9rem;
+    }
 
     .copy-right {
         color: var(--muted);
         text-align: center;
-        font-size: 14px;
+        font-size: 0.95rem;
         padding-top: 2rem;
     }
 }
