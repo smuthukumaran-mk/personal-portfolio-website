@@ -1425,7 +1425,7 @@ header {
         font-weight: 700;
     }
 
-    .result {
+    .course-card .result {
         padding: 2px 8px;
         font-size: 0.80rem;
         font-weight: 500;
