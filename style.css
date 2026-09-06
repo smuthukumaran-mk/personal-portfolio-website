@@ -1690,3 +1690,106 @@ body.menu-open footer {
         padding-top: 2rem;
     }
 }
+/* ------ SCROLL / LOAD TRANSITIONS ------ */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.reveal-left {
+    transform: translateX(-32px);
+}
+
+.reveal.reveal-right {
+    transform: translateX(32px);
+}
+
+.reveal.reveal-scale {
+    transform: translateY(16px) scale(0.96);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Staggered entry for grouped items (cards, tags, links) */
+.stagger > * {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stagger.is-visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger.is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+.stagger.is-visible > *:nth-child(2) { transition-delay: 0.12s; }
+.stagger.is-visible > *:nth-child(3) { transition-delay: 0.19s; }
+.stagger.is-visible > *:nth-child(4) { transition-delay: 0.26s; }
+.stagger.is-visible > *:nth-child(5) { transition-delay: 0.33s; }
+.stagger.is-visible > *:nth-child(6) { transition-delay: 0.4s; }
+.stagger.is-visible > *:nth-child(7) { transition-delay: 0.47s; }
+.stagger.is-visible > *:nth-child(8) { transition-delay: 0.54s; }
+
+/* Page-load intro for the hero (above the fold, no scroll needed) */
+.page-loaded .hero-text > * {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: hero-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.page-loaded .hero-text > *:nth-child(1) { animation-delay: 0.05s; }
+.page-loaded .hero-text > *:nth-child(2) { animation-delay: 0.13s; }
+.page-loaded .hero-text > *:nth-child(3) { animation-delay: 0.21s; }
+.page-loaded .hero-text > *:nth-child(4) { animation-delay: 0.29s; }
+.page-loaded .hero-text > *:nth-child(5) { animation-delay: 0.37s; }
+.page-loaded .hero-text > *:nth-child(6) { animation-delay: 0.45s; }
+
+.page-loaded .hero-visual {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+    animation: hero-visual-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes hero-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hero-visual-in {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .stagger > * {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .page-loaded .hero-text > *,
+    .page-loaded .hero-visual {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
