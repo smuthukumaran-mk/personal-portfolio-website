@@ -16,6 +16,7 @@ A resonsive personal portfolio website developed using HTML, and CSS to showcase
 
 * HTML5
 * CSS3
+* JavaScript
 
 ## Project Structure
 
@@ -38,5 +39,5 @@ personal-portfolio-website/
 ## Author
 
 MUTHUKUMARAN S
-* LinkedIn - https://linkedin.com/s-muthukumaran-mk/
+* LinkedIn - https://linkedin.com/smuthukumaran-mk/
 * Instagram - https://instagram.com/xmuthukumaran/
