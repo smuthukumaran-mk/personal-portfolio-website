@@ -1690,6 +1690,16 @@ body.menu-open footer {
         padding-top: 2rem;
     }
 }
+/* ---- INTERNSHIP SECTION (Experience format, no timeline bar/dot) ---- */
+.exp-card.no-timeline {
+    padding-left: 0;
+}
+
+.exp-card.no-timeline::before,
+.exp-card.no-timeline .company-card::before {
+    content: none;
+}
+
 /* ------ SCROLL / LOAD TRANSITIONS ------ */
 .reveal {
     opacity: 0;
