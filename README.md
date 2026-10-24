@@ -35,7 +35,6 @@ personal-portfolio-website/
 
 * Visit portfolio here - https://smuthukumaran-mk.github.io/personal-portfolio-website/
 
-
 ## Author
 
 MUTHUKUMARAN S
