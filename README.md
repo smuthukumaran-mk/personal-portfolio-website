@@ -1,6 +1,6 @@
 # personal-portfolio-website
 
-A resonsive personal portfolio website developed using HTML, and CSS to showcase my skills, projects, professional experience, education background, and contact details.
+A resonsive personal portfolio website developed using HTML, CSS, and JavaScript to showcase my skills, projects, professional experience, education background, and contact details.
 
 ## Features
 * Responsive layouts for Mobile, Tablet, and Laptop devices.
