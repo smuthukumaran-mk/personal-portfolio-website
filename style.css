@@ -495,6 +495,7 @@ body.menu-open footer {
 .img-card img {
     width: 270px;
     border-radius: 12px;
+    box-shadow: 0 0 24px -8px var(--cyan);
 }
 
 .summary-card p {
